@@ -1,0 +1,54 @@
+{
+  "name": "kupferk/impala",
+  "version": "0.1.0",
+  "author": "dimajix",
+  "summary": "Puppet module for managing Cloudera Impala",
+  "license": "Apache 2.0",
+  "source": "",
+  "project_page": null,
+  "issues_url": null,
+  "tags": ["hadoop"],
+  "operatingsystem_support": [
+    {
+    "operatingsystem": "Debian",
+    "operatingsystemrelease": ["7"]
+    },
+    {
+    "operatingsystem": "Ubuntu",
+    "operatingsystemrelease": ["14.04"]
+    },
+    {
+    "operatingsystem": "Fedora",
+    "operatingsystemrelease": ["21"]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "pe",
+      "version_requirement": "3.x"
+    },
+    {
+      "name": "puppet",
+      "version_requirement": "3.x"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_range": ">= 1.0.0"
+    },
+    {
+      "name": "adrien/alternatives",
+      "version_range": ">= 0.3.0"
+    },
+    {
+      "name": "cesnet-hadoop",
+      "version_range": ">= 0.9.5"
+    },
+    {
+      "name": "cesnet-hive",
+      "version_range": ">= 0.9.5"
+    }
+  ]
+}
+
