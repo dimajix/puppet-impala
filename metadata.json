@@ -1,7 +1,7 @@
 {
-  "name": "kupferk/impala",
+  "name": "dimajix/impala",
   "version": "0.1.0",
-  "author": "dimajix",
+  "author": "Kaya Kupferschmidt <k.kupferschmidt@dimajix.de>",
   "summary": "Puppet module for managing Cloudera Impala",
   "license": "Apache 2.0",
   "source": "",
