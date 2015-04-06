@@ -1,6 +1,6 @@
 {
   "name": "dimajix/impala",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Kaya Kupferschmidt <k.kupferschmidt@dimajix.de>",
   "summary": "Puppet module for managing Cloudera Impala",
   "license": "Apache 2.0",
@@ -34,20 +34,20 @@
   ],
   "dependencies": [
     {
-      "name": "puppetlabs-stdlib",
-      "version_range": ">= 1.0.0"
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">= 1.0.0"
     },
     {
-      "name": "adrien-alternatives",
-      "version_range": ">= 0.3.0"
+      "name": "adrien/alternatives",
+      "version_requirement": ">= 0.3.0"
     },
     {
-      "name": "cesnet-hadoop",
-      "version_range": ">= 0.9.5"
+      "name": "cesnet/hadoop",
+      "version_requirement": ">= 0.9.5"
     },
     {
-      "name": "cesnet-hive",
-      "version_range": ">= 0.9.5"
+      "name": "cesnet/hive",
+      "version_requirement": ">= 0.9.5"
     }
   ]
 }
