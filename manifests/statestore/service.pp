@@ -4,6 +4,6 @@ class impala::statestore::service {
   service { $impala::daemons['statestore']:
     ensure    => 'running',
     enable    => true,
-    # subscribe => [File['impala-site.xml']],
+    subscribe => [File['impala_conf/impala-default']],
   }
 }

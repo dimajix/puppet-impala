@@ -4,6 +4,6 @@ class impala::server::service {
   service { $impala::daemons['server']:
     ensure    => 'running',
     enable    => true,
-    # subscribe => [File['impala-site.xml']],
+    subscribe => [File['impala_conf/impala-default']],
   }
 }
