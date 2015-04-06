@@ -43,4 +43,10 @@ class impala::params {
     debian => '/etc/impala/conf',
     redhat => '/etc/impala',
   }
+  $config = '/etc/default/impala'
+
+  $catalog_hostname = '127.0.0.1'
+  $statestore_hostname = '127.0.0.1'
+  $statestore_port = 24000
+  $server_port = 22000
 }
