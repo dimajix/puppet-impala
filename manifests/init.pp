@@ -23,7 +23,7 @@ class impala (
   }
 
   $hive_dyn_properties = {
-    'hive.metastore.uris' => 'thrift://${impala::metastore_hostname}:${hive_port}',
+    'hive.metastore.uris' => "thrift://${impala::metastore_hostname}:${hive_port}",
     'hive.metastore.client.socket.timeout' => '3600'
   }
   $hive_dyn_descriptions = {
