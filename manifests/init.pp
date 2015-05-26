@@ -23,13 +23,13 @@ class impala (
   }
 
   $hive_dyn_properties = {
-    'hive.metastore.uris' => 'thrift://${impala::metastore_hostname}:${hive_port}',
+    'hive.metastore.uris' => "thrift://${impala::metastore_hostname}:${metastore_port}",
     'hive.metastore.client.socket.timeout' => '3600'
   }
   $hive_dyn_descriptions = {
   }
 
-  $hive_props = merge($dyn_hive_properties, $properties)
-  $hive_descs = merge($dyn_hive_descriptions, $descriptions)
+  $hive_props = merge($hive_dyn_properties, $properties)
+  $hive_descs = merge($hive_dyn_descriptions, $descriptions)
 }
 
