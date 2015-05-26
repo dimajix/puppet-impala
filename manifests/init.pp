@@ -29,7 +29,7 @@ class impala (
   $hive_dyn_descriptions = {
   }
 
-  $hive_props = merge($dyn_hive_properties, $properties)
-  $hive_descs = merge($dyn_hive_descriptions, $descriptions)
+  $hive_props = merge($hive_dyn_properties, $properties)
+  $hive_descs = merge($hive_dyn_descriptions, $descriptions)
 }
 
