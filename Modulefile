@@ -1,5 +1,5 @@
 name 'dimajix-impala'
-version '0.1.8'
+version '0.1.9'
 source 'https://github.com/dimajix/puppet-impala'
 author 'Kaya Kupferschmidt <k.kupferschmidt@dimajix.de>'
 license 'MIT'
