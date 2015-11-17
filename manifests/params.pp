@@ -4,8 +4,8 @@
 # It sets variables according to platform
 #
 class impala::params {
-  case $::osfamily {
-    'Debian': {
+  case "${::osfamily}-${::operatingsystem}" {
+    /RedHat-Fedora/: {
       $packages = {
         common => [ 'impala' ],
         catalog => 'impala-catalog',
@@ -19,7 +19,7 @@ class impala::params {
         server => 'impala-server',
       }
     }
-    'RedHat': {
+    /Debian|RedHat/: {
       $packages = {
         common => [ 'impala' ],
         catalog => 'impala-catalog',
@@ -42,9 +42,9 @@ class impala::params {
     debian => 'cluster',
     redhat => undef,
   }
-  $confdir = $::osfamily ? {
-    debian => '/etc/impala/conf',
-    redhat => '/etc/impala',
+  $confdir = "${::osfamily}-${::operatingsystem}" ? {
+    /Fedora-RedHat/ => '/etc/hive',
+    /Debian|RedHat/ => '/etc/hive/conf',
   }
   $config = '/etc/default/impala'
 
