@@ -43,8 +43,8 @@ class impala::params {
     redhat => undef,
   }
   $confdir = "${::osfamily}-${::operatingsystem}" ? {
-    /Fedora-RedHat/ => '/etc/hive',
-    /Debian|RedHat/ => '/etc/hive/conf',
+    /Fedora-RedHat/ => '/etc/impala',
+    /Debian|RedHat/ => '/etc/impala/conf',
   }
   $config = '/etc/default/impala'
 
